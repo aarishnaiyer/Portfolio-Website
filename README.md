@@ -34,4 +34,4 @@ images/      # profile photo and assets
 
 - Site: [aarishnaiyer.com](https://aarishnaiyer.com)
 - GitHub: [@aarishnaiyer](https://github.com/aarishnaiyer)
-- LinkedIn: [in/aarishna](https://linkedin.com/in/aarishna)
+- LinkedIn: [in/aarishnaiyer](https://linkedin.com/in/aarishnaiyer)
