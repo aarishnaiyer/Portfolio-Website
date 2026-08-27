@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aarish Naiyer | Software Engineer</title>
+    <title>Aarish Naiyer | Ethereum Protocol Fellow & CS Student</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -35,7 +35,6 @@
             overflow-x: hidden;
         }
 
-        /* ── grid noise texture overlay ── */
         body::before {
             content: '';
             position: fixed;
@@ -55,7 +54,6 @@
             z-index: 1;
         }
 
-        /* ── NAV ── */
         header {
             padding: 1.25rem 0;
             position: sticky;
@@ -90,7 +88,6 @@
         }
         nav a:hover { color: var(--accent); }
 
-        /* ── SIDEBAR WIDGET ── */
         .profile-widget {
             position: fixed;
             top: 50%;
@@ -139,7 +136,6 @@
 
         @media (max-width: 900px) { .profile-widget { display: none; } }
 
-        /* ── HERO ── */
         .hero { padding: 7rem 0 5rem; }
 
         .status-pill {
@@ -247,7 +243,6 @@
             transform: translateY(-2px);
         }
 
-        /* ── SECTIONS ── */
         .section {
             padding: 5.5rem 0;
             border-top: 1px solid var(--border);
@@ -271,7 +266,6 @@
             letter-spacing: -0.02em;
         }
 
-        /* ── PROJECT CARDS ── */
         .projects-grid {
             display: grid;
             gap: 1.5rem;
@@ -353,7 +347,7 @@
             color: var(--text-main);
         }
         .project-bullets li::before {
-            content: "›";
+            content: "\203A";
             position: absolute;
             left: 0;
             color: var(--accent);
@@ -385,7 +379,6 @@
             border-radius: 3px;
         }
 
-        /* ── ABOUT ── */
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -412,7 +405,6 @@
 
         .about-card p { font-size: 0.9rem; }
 
-        /* ── SKILLS ── */
         .skills-outer { display: grid; gap: 2rem; }
 
         .skills-block {
@@ -486,19 +478,11 @@
         }
 
         .learning-tag::before {
-            content: '↗';
+            content: '\2197';
             font-size: 0.65rem;
             opacity: 0.7;
         }
 
-        /* ── LIFE SECTION ── */
-        .life-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.25rem;
-        }
-
-        /* ── CONTACT ── */
         .contact-section {
             text-align: center;
             padding: 5.5rem 0;
@@ -514,7 +498,6 @@
 
         .contact-section p { margin-bottom: 2rem; font-size: 1rem; }
 
-        /* ── FOOTER ── */
         footer {
             padding: 3rem 0;
             border-top: 1px solid var(--border);
@@ -534,7 +517,6 @@
             .container { padding: 0 1.25rem; }
         }
 
-        /* ── FADE IN ── */
         .fade-in {
             opacity: 0;
             transform: translateY(18px);
@@ -554,12 +536,11 @@
 </head>
 <body>
 
-    <!-- ── Sidebar Widget ── -->
     <div class="profile-widget">
         <img src="images/linkedinprofile.jpg" alt="Aarish Naiyer" />
         <div class="sidebar-line"></div>
         <div class="profile-links">
-            <a href="https://github.com/aarishna" target="_blank">github</a>
+            <a href="https://github.com/aarishnaiyer" target="_blank">github</a>
             <a href="https://linkedin.com/in/aarishna" target="_blank">linkedin</a>
             <a href="mailto:aarish@ualberta.ca">email</a>
         </div>
@@ -567,11 +548,11 @@
 
     <div class="container">
 
-        <!-- ── Nav ── -->
         <header>
             <nav>
                 <a href="#" class="logo"><span>~/</span>naiyer_aarish</a>
                 <ul>
+                    <li><a href="#experience">experience</a></li>
                     <li><a href="#projects">projects</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#skills">skills</a></li>
@@ -580,46 +561,91 @@
             </nav>
         </header>
 
-        <!-- ── Hero ── -->
         <section class="hero">
             <div class="fade-in">
                 <div class="status-pill">
                     <span class="status-dot"></span>
-                    Available for Internships - Fall 2026
+                    Available for Internships &middot; Summer 2027
                 </div>
             </div>
             <div class="hero-inner fade-in">
                 <div class="hero-text">
                     <h1>Aarish Naiyer</h1>
-                    <h2>// Software Engineer & CS Student</h2>
+                    <h2>// Ethereum Protocol Fellow & CS Student</h2>
                 </div>
                 <img src="images/linkedinprofile.jpg" alt="Aarish Naiyer" class="hero-photo" />
             </div>
             <p class="fade-in">
-                Second-year Computer Science student at the <strong>University of Alberta</strong>.
-                I build things across the stack — from low-level C systems and Python data pipelines
-                to automated test infrastructure and cloud integrations. I care about writing software
-                that is correct, observable, and maintainable.
+                Second-year Computer Science student at the <strong>University of Alberta</strong> and an
+                <strong>Ethereum Foundation Protocol Fellow</strong>, working on trust-minimized checkpoint
+                sync for Ethereum's consensus layer in Rust. I work across the stack, from consensus-layer
+                protocol code and low-level C systems to live web tooling, and I care about software that is
+                correct, verifiable, and observable.
             </p>
             <div class="hero-links fade-in">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="https://github.com/aarishna" class="btn btn-ghost" target="_blank">GitHub →</a>
-                <a href="https://linkedin.com/in/aarishna" class="btn btn-ghost" target="_blank">LinkedIn →</a>
-                <a href="mailto:aarish@ualberta.ca" class="btn btn-ghost">Email →</a>
+                <a href="https://github.com/aarishnaiyer" class="btn btn-ghost" target="_blank">GitHub &rarr;</a>
+                <a href="https://linkedin.com/in/aarishna" class="btn btn-ghost" target="_blank">LinkedIn &rarr;</a>
+                <a href="mailto:aarish@ualberta.ca" class="btn btn-ghost">Email &rarr;</a>
             </div>
         </section>
 
-        <!-- ── Projects ── -->
+        <section id="experience" class="section">
+            <span class="section-label">01. Experience</span>
+            <h2 class="section-title">Experience</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>Ethereum Foundation, Protocol Fellow</h3>
+                        <span class="card-badge new">May 2026 &middot; Present</span>
+                    </div>
+                    <div class="tag-list">
+                        <span class="tag">Rust</span>
+                        <span class="tag">Lighthouse</span>
+                        <span class="tag">Altair Light Client</span>
+                        <span class="tag">Merkle Proofs</span>
+                        <span class="tag">Consensus Layer</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Building a trust-minimized alternative to checkpoint sync for Ethereum's consensus layer, replacing a centralized trust assumption with peer-to-peer verification via the Altair light client protocol and Merkle proofs.</li>
+                        <li>Implementing a Rust test handler for Lighthouse's light client data collection (ef_tests) under mentorship from a Nimbus core developer; opened a PR to Lighthouse's public docs.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <section id="projects" class="section">
-            <span class="section-label">01. Selected Works</span>
+            <span class="section-label">02. Selected Works</span>
             <h2 class="section-title">Technical Projects</h2>
 
             <div class="projects-grid">
 
-                <!-- Selenium -->
                 <div class="project-card">
                     <div class="card-header">
-                        <h3>Automated Test Suite — Budget Calculator</h3>
+                        <h3>Ethereum Consensus Explorer</h3>
+                        <span class="card-badge new">Live</span>
+                    </div>
+                    <div class="tag-list">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Beacon Node API</span>
+                        <span class="tag">HTML / CSS</span>
+                        <span class="tag">Async / Fetch</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Interactive block explorer for Ethereum's consensus layer. Search any slot and inspect its block, proposer, state and parent roots, attestations, and finality status, fetched live from the Beacon Chain.</li>
+                        <li>Built from scratch in vanilla JavaScript with async data fetching, JSON parsing, and graceful handling of skipped or missing slots.</li>
+                        <li>Deployed on GitHub Pages; surfaces the consensus-layer data my fellowship work is built on.</li>
+                    </ul>
+                    <div class="card-footer">
+                        <a href="https://aarishnaiyer.github.io/Ethereum-Consensus-Explorer/" class="source-link" target="_blank">live_demo &rarr;</a>
+                        <a href="https://github.com/aarishnaiyer/Ethereum-Consensus-Explorer" class="source-link" target="_blank">source_code &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>Automated Test Suite: Budget Calculator</h3>
                         <span class="card-badge new">In Progress</span>
                     </div>
                     <div class="tag-list">
@@ -630,15 +656,14 @@
                     </div>
                     <ul class="project-bullets">
                         <li>Building an end-to-end UI test suite for the Canada Student Budget Calculator using Selenium WebDriver and Pytest.</li>
-                        <li>Structured with the Page Object Model pattern for maintainability — separating element locators from test logic.</li>
+                        <li>Structured with the Page Object Model pattern for maintainability, separating element locators from test logic.</li>
                         <li>Test coverage spans form inputs, budget calculations, error states, and CSV export flows across multiple browser configurations.</li>
                     </ul>
                     <div class="card-footer">
-                        <span class="wip-badge">⚙ building now</span>
+                        <span class="wip-badge">building now</span>
                     </div>
                 </div>
 
-                <!-- Budget Calculator -->
                 <div class="project-card">
                     <div class="card-header">
                         <h3>Canada Student Budget Calculator</h3>
@@ -657,11 +682,10 @@
                         <li>Seasonal cost modelling (academic vs. summer), multi-city comparisons, and CSV export.</li>
                     </ul>
                     <div class="card-footer">
-                        <a href="https://intlstudentbudget.streamlit.app" class="source-link" target="_blank">live_demo →</a>
+                        <a href="https://intlstudentbudget.streamlit.app" class="source-link" target="_blank">live_demo &rarr;</a>
                     </div>
                 </div>
 
-                <!-- CPU Scheduler -->
                 <div class="project-card">
                     <div class="card-header">
                         <h3>CPU Scheduling Simulator</h3>
@@ -679,11 +703,10 @@
                         <li>Automated Gantt chart generation and benchmarked performance metrics (wait time, turnaround, throughput) across CPU-bound, I/O-bound, and mixed workloads.</li>
                     </ul>
                     <div class="card-footer">
-                        <a href="https://github.com/aarishna/CPU-Scheduling-Simulator" class="source-link" target="_blank">source_code →</a>
+                        <a href="https://github.com/aarishnaiyer/CPU-Scheduling-Simulator" class="source-link" target="_blank">source_code &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Loan Default -->
                 <div class="project-card">
                     <div class="card-header">
                         <h3>Loan Default Prediction System</h3>
@@ -701,24 +724,24 @@
                         <li>Built a CLI interface for browsing borrower profiles and prediction results with visualization aids.</li>
                     </ul>
                     <div class="card-footer">
-                        <a href="https://github.com/aarishna" class="source-link" target="_blank">source_code →</a>
+                        <a href="https://github.com/aarishnaiyer" class="source-link" target="_blank">source_code &rarr;</a>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- ── About ── -->
         <section id="about" class="section">
-            <span class="section-label">02. Profile</span>
+            <span class="section-label">03. Profile</span>
             <h2 class="section-title">About Me</h2>
             <div style="max-width: 66ch; margin-bottom: 2.5rem;">
                 <p style="margin-bottom: 1.25rem;">
-                    I'm a second-year CS student who's equally comfortable writing a memory allocator in C, scripting REST API integrations in Python,
-                    or building automated test coverage for a live application. I pick up new tools quickly and care about understanding <em>why</em> something works, not just that it does.
+                    I'm a second-year CS student who's equally comfortable writing consensus-layer protocol code in Rust,
+                    a memory allocator in C, or automated test coverage for a live application. I pick up new tools quickly
+                    and care about understanding <em>why</em> something works, not just that it does.
                 </p>
                 <p>
-                    Outside coursework I explore cryptography, contribute to the local tech community through
+                    Outside coursework I work on Ethereum's protocol stack, contribute to the local tech community through
                     <strong>NeurAlbertaTech</strong>, and take on personal projects that push me into unfamiliar territory.
                 </p>
             </div>
@@ -726,15 +749,15 @@
             <div class="about-grid">
                 <div class="about-card">
                     <h4>[Community]</h4>
-                    <p>Volunteer at <strong>NeurAlbertaTech (natHACKS)</strong> — supporting hackathon logistics, participant coordination, and on-campus outreach for the Alberta tech ecosystem.</p>
+                    <p>Volunteer at <strong>NeurAlbertaTech (natHACKS)</strong>, supporting hackathon logistics, participant coordination, and on-campus outreach for the Alberta tech ecosystem.</p>
                 </div>
                 <div class="about-card">
                     <h4>[Athletics]</h4>
-                    <p>Regular at the <strong>UABC badminton courts</strong> and the gym. High-intensity sport is how I reset — it keeps problem-solving sharp and perspective wide.</p>
+                    <p>Regular at the <strong>UABC badminton courts</strong> and the gym. High-intensity sport is how I reset. It keeps problem-solving sharp and perspective wide.</p>
                 </div>
                 <div class="about-card">
                     <h4>[Exploration]</h4>
-                    <p>Avid hiker — most recently summited <strong>Mount Sulphur</strong>. Getting above the treeline has a way of making engineering problems feel appropriately small.</p>
+                    <p>Avid hiker; most recently summited <strong>Mount Sulphur</strong>. Getting above the treeline has a way of making engineering problems feel appropriately small.</p>
                 </div>
                 <div class="about-card">
                     <h4>[Currently Reading]</h4>
@@ -743,9 +766,8 @@
             </div>
         </section>
 
-        <!-- ── Skills ── -->
         <section id="skills" class="section">
-            <span class="section-label">03. Tech Stack</span>
+            <span class="section-label">04. Tech Stack</span>
             <h2 class="section-title">Skills & Tools</h2>
 
             <div class="skills-outer">
@@ -757,8 +779,10 @@
                             <h5>Languages</h5>
                             <ul>
                                 <li>Python</li>
+                                <li>Rust</li>
                                 <li>C / C++</li>
                                 <li>JavaScript</li>
+                                <li>TypeScript</li>
                                 <li>SQL</li>
                                 <li>Bash / Shell</li>
                                 <li>R</li>
@@ -800,8 +824,6 @@
                 <div class="skills-block">
                     <div class="skills-block-title">Currently Exploring</div>
                     <div class="learning-grid">
-                        <span class="learning-tag">Rust — systems programming</span>
-                        <span class="learning-tag">TypeScript</span>
                         <span class="learning-tag">Node.js</span>
                         <span class="learning-tag">Playwright</span>
                         <span class="learning-tag">GitHub Actions / CI-CD</span>
@@ -814,25 +836,23 @@
             </div>
         </section>
 
-        <!-- ── Contact ── -->
         <section id="contact" class="contact-section">
             <h2>Get in Touch</h2>
-            <p>Seeking Summer 2026 internship opportunities in software engineering, QA, or security.</p>
+            <p>Seeking Summer 2027 internship opportunities in software engineering, protocol / systems, or QA.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="mailto:aarish@ualberta.ca" class="btn btn-primary">Send Message</a>
-                <a href="https://linkedin.com/in/aarishna" class="btn btn-ghost" target="_blank">LinkedIn →</a>
+                <a href="https://linkedin.com/in/aarishna" class="btn btn-ghost" target="_blank">LinkedIn &rarr;</a>
             </div>
         </section>
 
         <footer>
-            <div>© 2026 AARISH NAIYER</div>
+            <div>&copy; 2026 AARISH NAIYER</div>
             <div>UALBERTA / CS / EDMONTON</div>
         </footer>
 
     </div>
 
     <script>
-        // Intersection Observer for scroll-triggered fade-ins on cards
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry, i) => {
                 if (entry.isIntersecting) {
